@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - i3 Typing Master</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background: #f7f7f7;
+        }
+        .login-container {
+            max-width: 350px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 32px 28px 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #333;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px 8px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .login-container button:hover {
+            background: #005fa3;
+        }
+        .login-container .links {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .login-container .links a {
+            color: #0078d7;
+            text-decoration: none;
+            margin: 0 6px;
+            font-size: 14px;
+        }
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post" autocomplete="on">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required autocomplete="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="register.html">Register</a> |
+            <a href="reset-password.html">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>
